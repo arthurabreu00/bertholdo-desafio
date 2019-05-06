@@ -1,0 +1,125 @@
+:root {
+  --primary: #9e56a7;
+  --secondary: #41416c;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.content {
+  padding: 15px;
+  padding-bottom: 50px;
+  width: 500px;
+  border: solid #e6e6e6 1px;
+  background: rgb(236, 235, 235);
+}
+.form-cep,
+.display {
+  border: solid #e6e6e6 1px;
+}
+
+.display {
+  border-top: none;
+  padding: 10px;
+}
+.decalc {
+  float: left;
+  width: 40px;
+  height: 31px;
+  background: var(--primary);
+  position: relative;
+  z-index: 1;
+}
+.decalc:before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  border-right: 25px solid var(--secondary);
+  border-bottom: 10px solid transparent;
+}
+.fas {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+.text_one {
+  padding-left: 60px;
+}
+
+.form-group {
+  padding: 20px;
+}
+
+.form-cep-input {
+  padding: 6px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 85%;
+}
+
+.form-cep-btn {
+  color: white;
+  padding: 6px;
+  border: 1px solid transparent;
+  background: var(--primary);
+}
+.titleCEP {
+  font-size: 1rem;
+}
+
+.resultadoCEP {
+  width: 100%;
+  text-align: center;
+}
+
+.titleCEP {
+  padding-bottom: 5px;
+}
+
+.result {
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 20px;
+  border: none;
+  background: var(--primary);
+  box-shadow: var(--secondary) 0 3px;
+  color: white;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.button {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.btn:hover {
+  background: var(--secondary);
+  box-shadow: var(--primary) 0 3px;
+}
+
+.text-danger {
+  color: #d4281c;
+}
