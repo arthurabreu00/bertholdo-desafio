@@ -39,10 +39,11 @@ class Address
         // Se o cep for inválido faça, escreva uma mensagem de erro.
         $this->write_cep($cep); // Escrevendo o 1º Campo : O cep informado na tela.
 
-        if (!$this->get_address($cep)) {
+        // var_dump($street)->erro;
+
+        if (!$this->get_address($cep) || isset($street->erro)) {
             $this->write_erro('CEP inválido'); // Escrevendo caso ocorrer um erro.
         } else {
-
             $this->write_street($street); // Escrevendo o 2º Campo : A Rua na tela.
             $this->write_district($street); // Escrevendo o 3º Campo : O Bairro informado na tela.
             $this->write_country($street); // Escrevendo o 4º Campo : O Estado informado na tela.
